@@ -1,7 +1,7 @@
 
 # Interactive Map for Xenoblade Chronicles X
 
-Is an interactive map in first place to find location of enemies while troopmissions, where time is limited.
+Is an interactive map in first place to find location of enemies while troopmissions, where time is limited. Visit [http://unused.github.io/xenomap/](http://unused.github.io/xenomap/) to see current version.
 
 ## Development Notes
 
@@ -16,9 +16,11 @@ $ tileup --in map.png --output-dir map --prefix map
 
 ## TODO
 
-- [ ] use zoom (check tutorial by Oliver Marriott](http://omarriott.com/aux/leaflet-js-non-geographical-imagery/)).
 - [ ] create interface to choose data.
 - [ ] extend the data: troopmission targets, enemies, tyrants, treasures, etc.
+- [ ] add language support and translations
+- [ ] add quick contributions possibility (translations, new marker, new regions)
+- [ ] use zoom (check tutorial by [Oliver Marriott](http://omarriott.com/aux/leaflet-js-non-geographical-imagery/)).
 
 [leafletjs]: http://leafletjs.com/examples/quick-start.html "Leaflet"
 [tileup]: https://github.com/rktjmp/tileup/tree/master "Rubygem tileup"

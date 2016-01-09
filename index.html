@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Xenoblade Chronicles X</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Xenoblade Chronicles X - Mira World Map</title>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <style>#map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }</style>
+    <link rel="stylesheet" href="css/base.css" />
   </head>
   <body>
     <div id="map"></div>
@@ -12,15 +13,32 @@
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <script src="js/map-init.js"></script>
     <script src="js/map-data.js"></script>
+    <script src="js/map-controls.js"></script>
     <script type="text/javascript">
-      /* this is just a stub, using map from map-init to add data */
-      for (var i=0; i < MapData.regions.length; i++) {
-        var region = MapData.regions[i];
-        L.marker(
-          map.unproject(region.coords, map.getMaxZoom()),
-          { title: region.label }
-        ).addTo(map).bindPopup(region.label);
+      xenoMap.init();
+
+      xenoMap.addLayer("Regions", MapData.regions);
+      xenoMap.addLayer("Enemies", MapData.enemies);
+      xenoMap.map.setView(MapData.regions[0].coords);
+
+      var data  = [];
+
+      var regions = [];
+      data = MapData.regions;
+      for (var i=0; i < data.length; i++) {
+        var coords = xenoMap.map.unproject(data[i].coords, xenoMap.map.getMaxZoom());
+        regions.push(L.marker(coords, { title: data[i].label }).bindPopup(data[i].label));
       }
+      regions = L.layerGroup(regions);
+      var enemies = []
+      data = MapData.enemies;
+      for (var i=0; i < data.length; i++) {
+        var coords = xenoMap.map.unproject(data[i].coords, xenoMap.map.getMaxZoom());
+        enemies.push(L.marker(coords, { title: data[i].label }).bindPopup(data[i].label));
+      }
+      enemies = L.layerGroup(enemies);
+
+      L.control.layers({}, {"Regions": regions, "Enemies": enemies}).addTo(xenoMap.map);
     </script>
   </body>
 </html>

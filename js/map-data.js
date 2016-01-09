@@ -1,6 +1,7 @@
 /*
 
-This
+Regions
+Enemies
 
 */
 
@@ -12,6 +13,10 @@ var MapData = {
     { label: "Oblivia",   coords: [1350, 935],  link: "http://xenoblade.wikia.com/wiki/Oblivia" },
     { label: "Sylvalum",  coords: [1150, 440],  link: "http://xenoblade.wikia.com/wiki/Sylvalum" },
     { label: "Cauldros",  coords: [1330, 215],  link: "http://xenoblade.wikia.com/wiki/Cauldros" }
+  ],
+  enemies: [
+    { label: "foo", coords: [900, 1000] },
+    { label: "bar", coords: [1000, 900] }
   ]
 };
 
