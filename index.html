@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Xenoblade Chronicles X</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <style>#map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }</style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="js/map-init.js"></script>
+    <script src="js/map-data.js"></script>
+    <script type="text/javascript">
+      /* this is just a stub, using map from map-init to add data */
+      for (var i=0; i < MapData.regions.length; i++) {
+        var region = MapData.regions[i];
+        L.marker(
+          map.unproject(region.coords, map.getMaxZoom()),
+          { title: region.label }
+        ).addTo(map).bindPopup(region.label);
+      }
+    </script>
+  </body>
+</html>
+
+
