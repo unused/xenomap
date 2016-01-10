@@ -19,9 +19,18 @@
       xenoMap.setup();
 
       $.getJSON('data/regions.json', function(data) { xenoMap.addLayer("Regions", data); });
-      // $.getJSON('data/tyrants.json', function(data) { xenoMap.addLayer("Tyrants", data); });
+      $.getJSON('data/tyrants.json', function(data) {
+          data = data.map(function(marker) {
+            marker.coords = [
+              (350 + Math.round(Math.random()*3500)),
+              (420 + Math.round(Math.random()*3500))
+            ];
+            return marker;
+          });
+          xenoMap.addLayer("Tyrants (with random, not real coordinates just as demonstration)", data);
+      });
 
-      xenoMap.map.setView([0, 0], 18);
+      xenoMap.map.setView([0, 0], 16);
     </script>
   </body>
 </html>

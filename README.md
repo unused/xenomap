@@ -16,11 +16,11 @@ $ tileup --in map.png --output-dir map --prefix map
 
 ## TODO
 
-- [ ] create interface to choose data.
+- [x] create interface to choose data.
 - [ ] extend the data: troopmission targets, enemies, tyrants, treasures, etc.
 - [ ] add language support and translations
 - [ ] add quick contributions possibility (translations, new marker, new regions)
-- [ ] use zoom - check tutorial by [Oliver Marriott](http://omarriott.com/aux/leaflet-js-non-geographical-imagery/).
+- [x] use zoom - check tutorial by [Oliver Marriott](http://omarriott.com/aux/leaflet-js-non-geographical-imagery/).
 - [ ] add search form and result.
 - [ ] add loading progress.
 
