@@ -28,7 +28,7 @@
     "armr":"",
     "skellwep":"",
     "skellarmr":"",
-    "coords": [ 123, 456 ]
+    "coords": [ 0, 0 ]
   },
   {
     "name":"Celestin, the Spring Storm",
@@ -59,7 +59,7 @@
     "armr":"",
     "skellwep":"",
     "skellarmr":"",
-    "coords": [ 456, 123 ]
+    "coords": [ 0, 0 ]
   },
   {
     "name":"Hayreddin, the Territorial",

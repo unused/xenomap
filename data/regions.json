@@ -1,26 +1,32 @@
 [
   {
     "name":"NLA",
-    "coords": [ 930, 1020 ]
+    "link":"http://xenoblade.wikia.com/wiki/Mira#New_Los_Angeles",
+    "coords": [ 1800, 3650 ]
   },
   {
     "name":"Primordia",
-    "coords": [ 930, 1020 ]
+    "link":"http://xenoblade.wikia.com/wiki/Primordia",
+    "coords": [ 1650, 3350 ]
   },
   {
     "name":"Noctilum",
-    "coords": [ 620, 580 ]
+    "link":"http://xenoblade.wikia.com/wiki/Noctilum",
+    "coords": [ 750, 2250 ]
   },
   {
     "name":"Oblivia",
-    "coords": [ 1350, 935 ]
+    "link":"http://xenoblade.wikia.com/wiki/Oblivia",
+    "coords": [ 3250, 3350 ]
   },
   {
     "name":"Sylvalum",
-    "coords": [ 1150, 440 ]
+    "link":"http://xenoblade.wikia.com/wiki/Sylvalum",
+    "coords": [ 2650, 1550 ]
   },
   {
     "name":"Cauldros",
-    "coords": [ 1330, 215 ]
+    "link":"http://xenoblade.wikia.com/wiki/Cauldros",
+    "coords": [ 3200, 750 ]
   }
 ]
