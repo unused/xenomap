@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="css/base.css" />
   </head>
   <body>
+    <header>
+      <h1>Xenomap</h1>
+      <p>an interactive world map for the Nintendo Wii U game Xenoblade Chronicles X</p>
+    </header>
     <div id="map"></div>
 
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <script src="js/xenomap.js"></script>
+    <script src="js/xenomap-icons.js"></script>
 
     <script type="text/javascript">
       xenoMap.setup();
@@ -29,9 +34,21 @@
           });
           xenoMap.addLayer("Tyrants (with random, not real coordinates just as demonstration)", data);
       });
+      $.getJSON('data/jumppoints.json', function(data) {
+        xenoMap.addLayer("Jumppoints", data, { icon: xenoIcon.jumppoint });
+      });
+      $.getJSON('data/squadtasks.json', function(data) {
+
+      });
 
       xenoMap.map.setView([0, 0], 16);
     </script>
+
+    <div id="header-overlay">
+      <h2>Work in Progress</h2>
+      <p>The map presented is still under development. If you want to contribute in adding coordinates to some data please feel free to <a href="mailto:xenomap@lipautz.org">contact me</a>.</p>
+    </div>
+    <style>#header-overlay { position: absolute; top: 15px; left: 60px; width: 350px; text-align: justify; border-bottom: 0 none; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46); padding: 0.5em 1em; border-radius: 1em; background-color: #cdd; } </style>
   </body>
 </html>
 

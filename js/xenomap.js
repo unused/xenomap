@@ -24,7 +24,8 @@ var xenoMap = {
     this.controls = L.control.layers({}, {}).addTo(this.map);
   },
 
-  addLayer: function(label, data) {
+  addLayer: function(label, data, options) {
+    options = options || {};
     data = data.map(function(marker) {
       if(!marker.coords) {
         // console.log('no coords found for '+marker.name);
@@ -43,7 +44,8 @@ var xenoMap = {
         }
         popup += '</p>';
       }
-      return L.marker(coords, { title: marker.name }).bindPopup(popup);
+      options.title = marker.name
+      return L.marker(coords, options).bindPopup(popup);
     });
     data = L.layerGroup(data);
     this.controls.addOverlay(data, label);
