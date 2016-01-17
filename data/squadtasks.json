@@ -1,0 +1,12 @@
+[
+  {
+    "name":"squad task #1",
+    "regions": [
+      {
+        "name": "Hunt Forfex",
+        "type": "circle",
+        "coords": [ [ 1512, 3527 ], 50 ]
+      }
+    ]
+  }
+]

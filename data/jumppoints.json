@@ -1,0 +1,90 @@
+[
+  {
+    "name":"[de] Verwaltungsbezirk",
+    "location": "NLA",
+    "coords": [ 1915, 3655 ]
+  },
+  {
+    "name":"[de] Geschäftsviertel",
+    "location": "NLA",
+    "coords": [ 1835, 3570 ]
+  },
+  {
+    "name":"[de] Industriegebiet",
+    "location": "NLA",
+    "coords": [ 1730, 3570 ]
+  },
+  {
+    "name":"[de] Ma-non-Schiff (later)",
+    "location": "NLA",
+    "coords": [ 1730, 3730 ]
+  },
+  {
+    "name":"[de] Wohnviertel",
+    "location": "NLA",
+    "coords": [ 1835, 3730 ]
+  },
+
+  {
+    "name":"[de] Westtorsteppe",
+    "location": "Primordia",
+    "coords": [ 1610, 3495 ]
+  },
+  {
+    "name":"[de] Kummersteppe",
+    "location": "Primordia",
+    "coords": [ 1535, 3445 ]
+  },
+  {
+    "name":"[de] Halbdunkelsteig",
+    "location": "Primordia",
+    "coords": [ 1370, 3565 ]
+  },
+  {
+    "name":"[de] Kometenkessel",
+    "location": "Primordia",
+    "coords": [ 1275, 3505 ]
+  },
+  {
+    "name":"[de] Kometenkessel",
+    "location": "Primordia",
+    "coords": [ 1275, 3505 ]
+  },
+  {
+    "name":"[de] Urquellfells",
+    "location": "Primordia",
+    "coords": [ 1260, 3450 ]
+  },
+
+  {
+    "name":"FN Site 102",
+    "location": "Primordia",
+    "translations": {
+      "de": "Knotenpunkt 102"
+    },
+    "coords": [ 1250, 3535 ]
+  },
+  {
+    "name":"FN Site 104",
+    "location": "Primordia",
+    "translations": {
+      "de": "Knotenpunkt 104"
+    },
+    "coords": [ 1350, 3500 ]
+  },
+  {
+    "name":"FN Site 107",
+    "location": "Primordia",
+    "translations": {
+      "de": "Knotenpunkt 107"
+    },
+    "coords": [ 1512, 3527 ]
+  },
+
+
+  {
+    "name":"Placeholder",
+    "description": "does nothing",
+    "coords": [ 0, 0 ]
+  }
+]
